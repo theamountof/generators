@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lana Del Rey Title Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+		body {background: #ccc; background-image:url('https://i.imgur.com/7BBJTEl.png') no-repeat right top; font-family: 'La Belle Aurore', cursive;}
+		h1 {color: #000; text-align: center;}
+		h2 {font-size: 3em; color: #000; text-align: center;}
+		.panel {background: #ccc; margin-top: 20px;}
+	</style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="panel panel-primary">
+			<h1>Lana Del Rey Album Title Generator</h1>
+			<div style="margin: 10px 0;"><h2><span id="insultUno"></span><br />At<span id="insultDos"></span>
+				<!-- Insult Here Please -->
+				</div></h2>
+        </div>
+		<div class="panel panel-primary" style="border:none;">
+			<button class="btn btn-success btn-block btn-lg" onclick="window.location.reload();">Generate Another Title</button>
+		</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        
+		$(function newInsult() {
+			var randomNumber = Math.floor(Math.random() * (insultOne.length));
+			document.getElementById('insultUno').innerHTML = insultOne[randomNumber];
+        })
+		
+		var insultOne = [
+			'Smoke a Cigarette',
+			'Applying Red Lipstick',
+			'Reading Marx',
+			'Dissociating',
+			'Discovering God',
+			'Looking for the Pills I Lost',
+			'Scattering My Mother's Ashes',
+			'Getting Divorced',
+			'Exploring My Kinks',
+			'Falling Asleep',
+			'Feeling Like a Freak',
+			'Dancing on My Own',
+			'Feeling Violent',
+			'On My Knees',
+			'Gaslighting Myself',
+			'Regretting Everything',
+			'Discovering Freedom',
+			'Googling My Symptoms',
+			'Sinning',
+      'Engaging in Discourse',
+      'Cleansing My Body',
+      'Coming Out as Bisexual',
+      'Questioning the Culture',
+      'Getting High',
+      'Envisioning Hell',
+      'Feeling Miserable',
+      'Fining A Sugar Daddy',
+      'Liquidating My Assets',
+      'Serving Cunts',
+      'Getting Undressed'
+		];
+		
+		$(function newInsult() {
+			var randomNumber = Math.floor(Math.random() * (insultTwo.length));
+			document.getElementById('insultDos').innerHTML = insultTwo[randomNumber];
+        })
+		
+		var insultTwo = [
+			'the Vatican',
+      'the White Lotus Hotel',
+      'Whole Foods',
+      'the MET Gala',
+      'the Car Dealership',
+      'Buckingham Palace',
+      'My Therapist's Office',
+      'My Ex's House',
+      'the Kentucky Derby',
+      'the Country Club',
+      'the Private School',
+      'Tucker Carlson's House',
+      'the Synagogue',
+      'a Las Vegas Casino',
+      'the Train Station',
+      'the Clinic',
+      'the Apple Orchard',
+      'the Local LGBT Center',
+      'the White House',
+      'the Taylor Swift Concert',
+      'the Public Library',
+      'My Childhood Home',
+      'Sephora',
+      'the Billboard Music Awards',
+      'the Conspiracy Theory Convention',
+      'the Hollywood Walk of Fame',
+		];
+
+    </script>
+</body>
+
+</html>
