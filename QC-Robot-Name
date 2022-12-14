@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lana Del Rey Title Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+		body {background: #7297ac url('https://imgur.com/yBOCmCug') no-repeat center top;}
+		h1 {color: #000; font-size: 3.5em; text-align: center; font-family: 'La Belle Aurore', Ariel, Helvetica, sans-serif;}
+		h2 {font-size: 3em; color: #000; text-align: center; line-height: 70px; font-family: 'La Belle Aurore', Ariel, Helvetica, sans-serif;}
+		.panel {background: rgba(204, 204, 204, 0.50); margin-top: 20px; }
+	</style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="panel panel-primary">
+			<h1>Question Content Robot Name Generator</h1>
+			<div style="margin: 10px 0;"><h2><span id="insultUno"></span> <span id="insultDos"></span>
+				<!-- Insult Here Please -->
+				</div></h2>
+        </div>
+		<div class="panel panel-primary" style="border:none;">
+			<button class="btn btn-success btn-block btn-lg" onclick="window.location.reload();">Generate New Name</button>
+		</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        
+		$(function newInsult() {
+			var randomNumber = Math.floor(Math.random() * (insultOne.length));
+			document.getElementById('insultUno').innerHTML = insultOne[randomNumber];
+        })
+		
+		var insultOne = [
+			'Roko',
+      'Arachno',
+      'Arthur',
+      'Lemon',
+      'Melon',
+      'Bubbles',
+      'Beepatrice',
+      'Corpse',
+      'Charlotte',
+      'Number',
+      'Momo',
+      'Melon',
+      'Barry',
+      'Beeps',
+      'Bloops',
+      'Glitches',
+      'Pintsize',
+      'Reginal',
+      'Higgs',
+      'Space',
+      'Gordy',
+      'Winslow',
+      'Yay',
+      'Deckard',
+      'Buttons',
+      'Cappy',
+      'Eva',
+      'Key',
+      'Wire',
+      'Tinker',
+      'Mach',
+      'Moon'
+		];
+		
+		$(function newInsult() {
+			var randomNumber = Math.floor(Math.random() * (insultTwo.length));
+			document.getElementById('insultDos').innerHTML = insultTwo[randomNumber];
+        })
+		
+		var insultTwo = [
+			'Sales',
+      'Bot',
+      'Basilisk',
+      'Droid',
+      'Seven',
+      'Nine',
+      'Dash',
+      'X',
+      ' ',
+      'Witch',
+      'Station',
+      'Friend',
+      'AnthroPC',
+      '9000',
+      'Asimov',
+      'Function',
+      'System',
+      'Link',
+      'Interface',
+      'Manipulator',
+      'Clamps',
+      'Loop',
+      'Protocol',
+      'Device',
+      'Controller',
+      'CPU',
+      'Drive',
+      'Switch',
+      'Sensor',
+      'Unit',
+      'Gripper',
+      'Mode',
+      'Encoder',
+      'Moon',
+		];
+
+    </script>
+</body>
+
+</html>
